@@ -1,25 +1,14 @@
 {
-  "name": "project_1-mariadb",
+  "name": "battery-app",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MioVanya/Add_Batteries.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MioVanya/Add_Batteries/issues"
-  },
-  "homepage": "https://github.com/MioVanya/Add_Batteries#readme",
-  "description": "",
   "dependencies": {
-    "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.2",
     "pg": "^8.16.3"
   }
 }
