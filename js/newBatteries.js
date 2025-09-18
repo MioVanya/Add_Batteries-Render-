@@ -7,7 +7,7 @@ const ERROR_OUT_OF_STOCK = -2;
 require('dotenv').config();
 
 const pool = new Pool({
-  connectionString: "postgresql://batterydb_ot31_user:пароль@dpg-d35belgdl3ps738hgk20-a.frankfurt-postgres.render.com/batterydb_ot31",
+  connectionString: process.env.DB_URL,
   ssl: { rejectUnauthorized: false }
 });
 
