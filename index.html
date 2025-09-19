@@ -124,19 +124,22 @@
         title: "Wyszukiwarka Akumulatorów",
         brand: "Wpisz markę...",
         ah: "Wpisz Ah...",
-        button: "SZUKAJ"
+        button: "SZUKAJ",
+        alert: "Proszę podać nazwę marki akumulatora",
       },
       uk: {
         title: "Пошук акумуляторів",
         brand: "Введіть марку...",
         ah: "Введіть Ah...",
-        button: "ШУКАТИ"
+        button: "ШУКАТИ",
+        alert: "Будь ласка, введіть марку акумулятора",
       },
       en: {
         title: "Battery Finder",
         brand: "Enter brand...",
         ah: "Enter Ah...",
-        button: "SEARCH"
+        button: "SEARCH",
+        alert: "Please enter the brand name of the battery",
       }
     };
 
@@ -150,7 +153,11 @@
     function goToSearch() {
     const brand = document.getElementById("brandInput").value;
     const ah = document.getElementById("ahInput").value;
+    if (brand === "") {
+      alert(translations[currentLang].alert);
+    } else {
     window.location.href = `search.html?marka=${encodeURIComponent(brand)}&ah=${encodeURIComponent(ah)}&lang=${currentLang}`;
+    }
   }
 </script>
 

@@ -33,3 +33,13 @@ h2 {
     text-align: center;
     margin-top: 20px;
 }
+
+.no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}

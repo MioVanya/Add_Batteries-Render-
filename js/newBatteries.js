@@ -18,7 +18,7 @@ exports.initialise = function () {
 exports.getBatteryList = async function(marka) {
   const client = await pool.connect();
   try {
-    const res = await client.query('SELECT * FROM battery WHERE marka = $1', [marka]);
+    const res = await client.query('SELECT * FROM battery WHERE marka ILIKE $1', [marka]);
     return res.rows;
   } finally {
     client.release();
