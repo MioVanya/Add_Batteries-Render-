@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const PORT = 7777;
-=======
 const PORT = process.env.PORT || 9999;
->>>>>>> 9f79d27b46195d206d4a517a38380446c77132d1
 
 let express = require('express');
 
