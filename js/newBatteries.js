@@ -7,9 +7,9 @@ const ERROR_OUT_OF_STOCK = -2;
 require('dotenv').config();
 
 const pool = new Pool({
-    connectionString: process.env.DB_URL,
-    ssl: { rejectUnauthorized: false }
-  });
+  connectionString: process.env.DB_URL,
+  ssl: { rejectUnauthorized: false }
+});
 
 exports.initialise = function () {
 
